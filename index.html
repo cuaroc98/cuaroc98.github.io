@@ -80,8 +80,8 @@
 </div>
 <div class="container">
 	<div class="Paragraph4" style="background: #fafafa">
-		<a class="btn btn-outline-success my-2 my-sm-0" onclick="show('about')">Über Uns</a>
-		<a class="btn btn-outline-success my-2 my-sm-0" onclick="alert('test')">Kontakt</a>
+		<a class="btn btn-outline-success my-2 my-sm-0" onclick="show('about'); this.onclick = hide('about')">Über Uns</a>
+		<a class="btn btn-outline-success my-2 my-sm-0" onclick="show('contact'); this.onclick = hide('contact')">Kontakt</a>
 		<br><br>
 		<br><br>
 	</div>
@@ -89,7 +89,24 @@
 <div id="about" class="container">
 	<div class="Paragraph5" style="background: #fafafa">
 		<div class="row" style="">
-			
+			<div class="col-sm-12">
+				<div>
+					<h1 class="mb-2">Laufen</h1>
+					<h2 class="mb-3">Wir können laufen.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="contact" class="container">
+	<div class="Paragraph5" style="background: #fafafa">
+		<div class="row" style="">
+			<div class="col-sm-12">
+				<div>
+					<h1 class="mb-2">Laufen</h1>
+					<h2 class="mb-3">Wir können laufen.</h2>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
