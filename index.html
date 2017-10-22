@@ -1,8 +1,9 @@
 <script type="text/javascript" src="/js/jQuery.js"></script>
 <script>
+
+	var ids = ["contact", "about", "times"];
 	function show(id)
 	{
-		var ids = ["contact", "about", "times"];
 		for(var i = 0; i < ids.length; i++)
 		{
 			if(id != ids[i])
@@ -26,7 +27,6 @@
 			jQuery('#' + id).attr('active', 'false');
 			document.getElementById(id + "-btn").onclick = function(){show(id)};
 		}
-		return 0;
 	}
 </script>
 
