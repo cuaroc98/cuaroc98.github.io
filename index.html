@@ -7,14 +7,14 @@
 			hide(ids[i]);
 		}
 		document.getElementById(id).style.display = 'block';
-		document.getElementById(id).onClick = 'hide(' + id + ')';
+		document.getElementById(id + "btn").onClick = 'hide(' + id + ')';
 		return 0;
 	}
 	
 	function hide(id)
 	{
 		document.getElementById(id).style.display = 'none';
-		document.getElementById(id).onClick = 'show(' + id + ')';
+		document.getElementById(id + "btn").onClick = 'show(' + id + ')';
 		return 0;
 	}
 </script>
@@ -93,8 +93,8 @@
 </div>
 <div class="container">
 	<div class="Paragraph4" style="background: #fafafa">
-		<a class="btn btn-outline-success my-2 my-sm-0" onclick="show('about');">Über Uns</a>
-		<a class="btn btn-outline-success my-2 my-sm-0" onclick="show('contact');">Kontakt</a>
+		<a id="about-btn" class="btn btn-outline-success my-2 my-sm-0" onclick="show('about');">Über Uns</a>
+		<a id="contact-btn" class="btn btn-outline-success my-2 my-sm-0" onclick="show('contact');">Kontakt</a>
 		<br><br>
 		<br><br>
 	</div>
