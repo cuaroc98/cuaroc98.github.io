@@ -1,8 +1,18 @@
 <script>
 	function show(id)
 	{
-		
+		var ids = ["about", "contact"];
+		for(var i = 0; i < id.length; i++)
+		{
+			hide(ids[i]);
+		}
 		document.getElementById(id).style.display = 'block';
+		return 0;
+	}
+	
+	function hide(id)
+	{
+		document.getElementById(id).style.display = 'none';
 		return 0;
 	}
 </script>
