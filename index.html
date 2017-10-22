@@ -9,10 +9,10 @@
 			{
 				hide(ids[i]);
 			}
-			else if(jQuery('#' + id).attr('hidden') == 'true')
+			else if(jQuery('#' + id).attr('actve') == 'false')
 			{
 				jQuery('#' + id).slideToggle();
-				jQuery('#' + id).attr('hidden', 'false');
+				jQuery('#' + id).attr('active', 'true');
 				document.getElementById(id + '-btn').onclick = function(){hide(id)};
 			}
 		}
@@ -20,10 +20,10 @@
 	
 	function hide(id)
 	{
-		if(jQuery('#' + id).attr('hidden') == 'false')
+		if(jQuery('#' + id).attr('active') == 'true')
 		{
 			jQuery('#' + id).slideToggle();
-			jQuery('#' + id).attr('hidden', 'true');
+			jQuery('#' + id).attr('active', 'false');
 			document.getElementById(id + "-btn").onclick = function(){show(id)};
 		}
 		return 0;
@@ -111,7 +111,7 @@
 		<br><br>
 	</div>
 </div>
-<div id="about" class="container" style="display:none" active="true">
+<div id="about" class="container" style="display:none" active="false">
 	<div class="Paragraph5" style="background: #fafafa">
 		<div class="row" style="">
 			<div class="col-sm-12">
@@ -124,7 +124,7 @@
 	</div>
 </div>
 
-<div id="times" class="container" style="display:none" active="true">
+<div id="times" class="container" style="display:none" active="false">
 	<div class="Paragraph8" style="background: #fafafa">
 		<div class="row" style="">
 			<div class="col-sm-12">
@@ -136,7 +136,7 @@
 		</div>
 	</div>
 </div>
-<div id="contact" class="container" style="display:none" active="true">
+<div id="contact" class="container" style="display:none" active="false">
 	<div class="Paragraph7" style="background: #fafafa">
 		<div class="row" style="">
 			<div class="col-sm-12">
