@@ -4,7 +4,10 @@
 		var ids = ["about", "contact"];
 		for(var i = 0; i < ids.length; i++)
 		{
-			hide(ids[i]);
+			if(id != ids[i])
+			{
+				hide(ids[i]);
+			}
 		}
 		document.getElementById(id).style.display = 'block';
 		document.getElementById(id + "-btn").onclick = function(){hide(id)};
