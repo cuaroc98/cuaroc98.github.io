@@ -1,4 +1,7 @@
+@font-face { font-family: Test; src: url('fontawesome-webfont.ttf'); } 
+
 div.container{text-align:center!important;}
+
 html *
 {
 	font-family: Test !important;
