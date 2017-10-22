@@ -7,14 +7,14 @@
 			hide(ids[i]);
 		}
 		document.getElementById(id).style.display = 'block';
-		document.getElementById(id + "-btn").onClick = function(){hide(id);};
+		document.getElementById(id + "-btn").onClick = function(){hide(id)};
 		return 0;
 	}
 	
 	function hide(id)
 	{
 		document.getElementById(id).style.display = 'none';
-		document.getElementById(id + "-btn").onClick = function(){show(id);};
+		document.getElementById(id + "-btn").onClick = function(){show(id)};
 		return 0;
 	}
 </script>
