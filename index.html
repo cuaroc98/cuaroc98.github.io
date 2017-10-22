@@ -12,11 +12,11 @@
 					jQuery('#' + id).slideToggle();
 					document.getElementById(id + "-btn").onclick = function(){show(id)};
 				}
-				else
-				{
-					jQuery('#' + id).slideToggle();
-					document.getElementById(id + "-btn").onclick = function(){hide(id)};
-				}
+			}
+			else if(jQuery('#' + id).attr('style') == "display:none")
+			{
+				jQuery('#' + id).slideToggle();
+				document.getElementById(id + "-btn").onclick = function(){hide(id)};
 			}
 		}
 	}
