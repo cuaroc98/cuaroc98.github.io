@@ -7,10 +7,9 @@
 		{
 			if(id != ids[i])
 			{
-				if(jQuery('#' + id).attr('style') == "display:block")
+				if(jQuery('#' + ids[i]).attr('style') == "display:block")
 				{
-					jQuery('#' + id).slideToggle();
-					document.getElementById(id + "-btn").onclick = function(){show(id)};
+					hide(ids[i]);
 				}
 			}
 			else if(jQuery('#' + id).attr('style') == "display:none")
