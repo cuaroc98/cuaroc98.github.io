@@ -1,3 +1,11 @@
+<script>
+	function show(id)
+	{
+		document.getElementById(id).style.display = 'block';
+		return 0;
+	}
+</script>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,11 +80,14 @@
 </div>
 <div class="container">
 	<div class="Paragraph3" style="background: #fafafa">
-		<a class="btn btn-outline-success my-2 my-sm-0" onclick="alert('test')">Über Uns</a>
+		<a class="btn btn-outline-success my-2 my-sm-0" onclick="show('about')">Über Uns</a>
 		<a class="btn btn-outline-success my-2 my-sm-0" onclick="alert('test')">Kontakt</a>
 		<br><br>
 		<br><br>
 	</div>
+</div>
+<div id="about" style="display:none">
+	Testestest
 </div>
 </body>
 </html>
