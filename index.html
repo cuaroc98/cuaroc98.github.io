@@ -2,6 +2,14 @@
 <script>
 
 	var ids = ["contact", "about", "times"];
+	
+	function showTest(id)
+	{
+		jQuery('#' + id).slideToggle();
+		jQuery('#' + id).attr('active', 'true');
+		document.getElementById(id + '-btn').onclick = function(){hide(id)};
+	}
+	
 	function show(id)
 	{
 		for(var i = 0; i < ids.length; i++)
