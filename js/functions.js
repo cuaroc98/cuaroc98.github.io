@@ -33,4 +33,7 @@ function hide(id)
 	}
 }
 
-
+function resize(img_id)
+{
+	jQuery('#' + img_id).toggleClass('small', 'large'):
+}
