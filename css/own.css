@@ -18,6 +18,8 @@ html *
 	position: relative;
     left: 40%;
     margin-left: -200%;
+	
+	transition : left 1s, margin-left 1s
 }
 
 .large
@@ -25,6 +27,7 @@ html *
 	position: relative;
     left: 0%;
     margin-left: 0%;
+	
 	transition : left 1s, margin-left 1s
 }
 
