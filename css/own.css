@@ -56,7 +56,7 @@ html *
     overflow: hidden;
 	width : 70%;
 	transition : width 1s;
-	transition-delay: 0.1s;
+	transition-delay: 0.3s;
 }
 
 .small-story
