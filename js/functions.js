@@ -1,5 +1,4 @@
 var ids = ["contact", "about", "times"];
-
 function showTest(id)
 {
 	jQuery('#' + id).slideToggle();
