@@ -55,7 +55,8 @@ html *
 	max-height: 338px;
     overflow: hidden;
 	width : 70%;
-	transition : width 0.3s;
+	transition : width 1s;
+	transition-delay: 0.5s;
 }
 
 .small-story
@@ -64,6 +65,5 @@ html *
 	max-height: 342px;
     overflow: hidden;
 	width : 0%;
-	transition : width 1s;
-	transition-delay: 0.3s;
+	transition : width 0.3s;
 }
