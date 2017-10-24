@@ -7,7 +7,7 @@ html *
 	font-family: Test !important;
 }
 
-#map 
+.map 
 {
 	height: 300px;
     width: 200px;
