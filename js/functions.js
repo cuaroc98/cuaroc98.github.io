@@ -47,7 +47,7 @@ function resize(img_id)
 	if(img_id = 'swim-pic' && swim == 1) swim = 0;
 	if(img_id = 'bike-pic' && bike == 0) {initMap(51.50694616, 7.46843398, 13, 'bike-map'); bike = 1;}
 	if(img_id = 'bike-pic' && bike == 1) bike = 0;
-	if(img_id = 'run-pic' && run == 0) {initMap(51.49331465, 7.45424509, 14, 'run-map'); bike = 1;}
+	if(img_id = 'run-pic' && run == 0) {initMap(51.49331465, 7.45424509, 14, 'run-map'); run = 1;}
 	if(img_id = 'run-pic' && run == 1) run = 0;
 }
 
