@@ -51,6 +51,7 @@ html *
 
 .small-story
 {
+	margin-left: -20px;
 	width: 70%;
     overflow: hidden;
 	transition : width 1s
