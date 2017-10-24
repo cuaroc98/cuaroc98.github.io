@@ -51,7 +51,7 @@ html *
 
 .large-story
 {
-	width : 70%
+	width : 70%;
 	transition : width 1s;
 }
 
