@@ -51,10 +51,14 @@ html *
 
 .small-story
 {
-	
+	width: 0%;
+    overflow: hidden;
+	transition : width 1s
 }
 
 .large-story
 {
-	
+	width: 100%;
+    overflow: hidden;
+	transition : width 1s
 }
