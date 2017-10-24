@@ -38,6 +38,7 @@ function resize(img_id)
 	jQuery('#' + img_id).toggleClass('small large');
 	jQuery('#' + img_id + '-cont').toggleClass('small-cont large-cont');
 	jQuery('#' + img_id + '-story').slideToggle(1000);
+	jQuery('#' + img_id + '-story').toggleClass('small-story large-story');
 }
 
 function initMaps()
