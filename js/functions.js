@@ -36,4 +36,5 @@ function hide(id)
 function resize(img_id)
 {
 	jQuery('#' + img_id).toggleClass('small , large');
+	jQuery('#' + img_id + '-cont').toggleClass('small-cont, large-cont');
 }
