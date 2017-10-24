@@ -33,6 +33,9 @@ function hide(id)
 	}
 }
 
+var swim = 0;
+var bike = 0;
+var run = 0;
 function resize(img_id)
 {
 	jQuery('#' + img_id).toggleClass('small large');
@@ -40,9 +43,9 @@ function resize(img_id)
 	jQuery('#' + img_id + '-story').slideToggle(600);
 	jQuery('#' + img_id + '-story').toggleClass('small-story large-story');
 	jQuery('#' + img_id + '-details').slideToggle(1000);
-	if(img_id = 'swim-pic') google.maps.event.trigger(document.getElementById('swim-map'), 'resize')
-	if(img_id = 'bike-pic') google.maps.event.trigger(document.getElementById('bike-map'), 'resize')
-	if(img_id = 'bike-pic') google.maps.event.trigger(document.getElementById('run-map'), 'resize')
+	if(img_id = 'swim-pic' && swim == 0) {google.maps.event.trigger(document.getElementById('swim-map'), 'resize'); swim = 1;}
+	if(img_id = 'bike-pic' && bike == 0) {google.maps.event.trigger(document.getElementById('bike-map'), 'resize'); bike = 1;}
+	if(img_id = 'bike-pic' && run == 0) {google.maps.event.trigger(document.getElementById('run-map'), 'resize'); run = 1;}
 }
 
 function initMaps()
