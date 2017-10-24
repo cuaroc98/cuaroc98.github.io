@@ -16,7 +16,7 @@ html *
 .small 
 {
 	position: relative;
-    left: 40%;
+    left: 60%;
     margin-left: -200%;
 	
 	transition : left 1s, margin-left 1s
@@ -33,7 +33,7 @@ html *
 
 .small-cont
 {
-	width: 90%;
+	width: 30%;
     text-align: center;
     overflow: hidden;
 	
