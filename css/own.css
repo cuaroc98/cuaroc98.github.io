@@ -18,7 +18,7 @@ html *
 	position: relative;
     left: 60%;
     margin-left: -200%;
-	
+	cursor : pointer;
 	transition : left 1s, margin-left 1s
 }
 
@@ -27,7 +27,7 @@ html *
 	position: relative;
     left: 0%;
     margin-left: 0%;
-	
+	cursor : pointer;
 	transition : left 1s, margin-left 1s
 }
 
