@@ -33,3 +33,11 @@ function hide(id)
 		document.getElementById(id + "-btn").onclick = function(){show(id)};
 	}
 }
+
+function initMap(lat, lng, zoom, element_id)
+{
+	new google.maps.Map(document.getElementById(element_id), {
+		zoom: zoom,
+		center: {lat: lat, lng:lng}
+	});
+}

@@ -2,14 +2,12 @@
 <script type="text/javascript" src="/js/functions.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqwEAFfzyB3GLmnlumO__usgoURfK_qWQ"></script>
 <script>
-	function initMap(lat, lng, zoom, element_id)
-	{
-		new google.maps.Map(document.getElementById(element_id), {
-			zoom: zoom,
-			center: {lat: lat, lng:lng}
-		});
-	}
-    </script>
+	jQuery(document).ready(function(){
+		initMap(51.50694616, 7.46843398, 14, 'swim-map');
+		initMap(51.50694616, 7.46843398, 14, 'bike-map');
+		//initMap(51.49331465, 7.45424509, 14, 'run-map');
+	});
+</script>
 
 <!DOCTYPE html>
 <html>
@@ -43,6 +41,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="map" class="swim-map"></div>
 		<br><br>
 	</div>
 </div>
@@ -61,7 +60,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="map" class="map"></div>
+		<div id="map" class="bike-map"></div>
 	<br><br>
 	</div>
 </div>
@@ -80,6 +79,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="map" class="run-map"></div>
 		<br><br>
 	</div>
 </div>
