@@ -59,7 +59,7 @@ html *
 
 .large-story
 {
-	width: 0%;
+	display : none;
     overflow: hidden;
 	transition : width 1s
 }
