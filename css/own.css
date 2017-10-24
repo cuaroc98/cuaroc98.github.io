@@ -51,12 +51,16 @@ html *
 
 .large-story
 {
+	max-height: 100%;
+    overflow: hidden;
 	width : 70%;
 	transition : width 1s;
 }
 
 .small-story
 {
+	max-height: 100%;
+    overflow: hidden;
 	width : 0%;
 	transition : width 1s;
 }
