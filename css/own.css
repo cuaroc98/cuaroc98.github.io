@@ -52,10 +52,10 @@ html *
 .large-story
 {
 	width : 70%;
+	transition : width 1s;
 }
 
 .small-story
 {
 	width : 0%;
-	transition : width 1s;
 }
