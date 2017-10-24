@@ -51,18 +51,19 @@ html *
 
 .large-story
 {
+	margin-left: -20px;
 	max-height: 342px;
     overflow: hidden;
 	width : 70%;
 	transition : width 1s;
-	transition-delay: 0.5s;
 }
 
 .small-story
 {
+	margin-left: -20px;
 	max-height: 342px;
     overflow: hidden;
 	width : 0%;
 	transition : width 1s;
-	transition-delay: 0.5s;
+	transition-delay: 0.3s;
 }
