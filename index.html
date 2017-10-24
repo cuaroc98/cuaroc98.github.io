@@ -2,23 +2,13 @@
 <script type="text/javascript" src="/js/functions.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqwEAFfzyB3GLmnlumO__usgoURfK_qWQ"></script>
 <script>
-	function initAllMaps()
+	function initMap(lat, lng, zoom, element_id)
 	{
-		initMap(51.50694616, 7.46843398, 'map')
+		new google.maps.Map(document.getElementById(element_id), {
+			zoom: zoom,
+			center: {lat: lat, lng:lng}
+		});
 	}
-
-	function initMap(lat, lng, element) 
-	{
-		var uluru = {lat: lat, lng: lng};
-		var map = new google.maps.Map(document.getElementById(element), {
-			zoom: 4,
-			center: uluru
-		});
-		var marker = new google.maps.Marker({
-			position: uluru,
-			map: map
-		});
-    }
     </script>
 
 <!DOCTYPE html>
