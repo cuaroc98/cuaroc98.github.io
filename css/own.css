@@ -49,17 +49,7 @@ html *
 	transition : width 1s
 }
 
-.small-story
-{
-	margin-left: -20px;
-	width: 70%;
-    overflow: hidden;
-	transition : width 1s
-}
-
 .large-story
 {
-	display : none;
-    overflow: hidden;
-	transition : width 1s
+	width : 70%
 }
