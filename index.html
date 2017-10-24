@@ -1,18 +1,24 @@
 ﻿<script type="text/javascript" src="/js/jQuery.js"></script>
 <script type="text/javascript" src="/js/functions.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqwEAFfzyB3GLmnlumO__usgoURfK_qWQ&callback=initMap(51.50694616, 7.46843398, map)"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqwEAFfzyB3GLmnlumO__usgoURfK_qWQ&callback=initAllMaps()"></script>
 <script>
-      function initMap(lat, lng, element) {
-        var uluru = {lat: lat, lng: lng};
-        var map = new google.maps.Map(document.getElementById(element), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+	function initAllMaps()
+	{
+		initMap(51.50694616, 7.46843398, 'map')
+	}
+
+	function initMap(lat, lng, element) 
+	{
+		var uluru = {lat: lat, lng: lng};
+		var map = new google.maps.Map(document.getElementById(element), {
+			zoom: 4,
+			center: uluru
+		});
+		var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+		});
+    }
     </script>
 
 <!DOCTYPE html>
