@@ -40,12 +40,15 @@ function resize(img_id)
 	jQuery('#' + img_id + '-story').slideToggle(600);
 	jQuery('#' + img_id + '-story').toggleClass('small-story large-story');
 	jQuery('#' + img_id + '-details').slideToggle(1000);
+	if(img_id = 'swim-pic') initMap(51.50694616, 7.46843398, 13, 'swim-map');
+	if(img_id = 'bike-pic') initMap(51.50694616, 7.46843398, 13, 'bike-map');
+	if(img_id = 'bike-pic') initMap(51.49331465, 7.45424509, 14, 'run-map');
 }
 
 function initMaps()
 {
 	initMap(51.50694616, 7.46843398, 13, 'swim-map');
-	//initMap(51.50694616, 7.46843398, 13, 'bike-map');
+	initMap(51.50694616, 7.46843398, 13, 'bike-map');
 	initMap(51.49331465, 7.45424509, 14, 'run-map');
 }
 
