@@ -51,9 +51,10 @@ html *
 
 .large-story
 {
+	display : none;
 	margin-left: -20px;
 	max-height: 338px;
-    overflow: hidden;
+        overflow: hidden;
 	width : 70%;
 	transition : width 1s;
 	transition-delay: 0.1s;
@@ -61,9 +62,10 @@ html *
 
 .small-story
 {
+	display : block;
 	margin-left: -20px;
 	max-height: 342px;
-    overflow: hidden;
+        overflow: hidden;
 	width : 0%;
 	transition : width 0.7s;
 }
