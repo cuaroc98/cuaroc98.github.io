@@ -51,7 +51,7 @@ html *
 
 .large-story
 {
-	display : none;
+	display : block;
 	margin-left: -20px;
 	max-height: 338px;
         overflow: hidden;
@@ -62,7 +62,7 @@ html *
 
 .small-story
 {
-	display : block;
+	display : none;
 	margin-left: -20px;
 	max-height: 342px;
         overflow: hidden;
