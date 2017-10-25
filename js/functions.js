@@ -40,9 +40,9 @@ function resize(img_id)
 {
 	jQuery('#' + img_id).toggleClass('small large');
 	jQuery('#' + img_id + '-cont').toggleClass('small-cont large-cont');
-	jQuery('#' + img_id + '-story').slideToggle(600);
+	//jQuery('#' + img_id + '-story').slideToggle(600);
 	jQuery('#' + img_id + '-story').toggleClass('small-story large-story');
-	//jQuery('#' + img_id + '-details').slideToggle(1000);
+	jQuery('#' + img_id + '-details').slideToggle(1000);
 	if(img_id = 'swim-pic' && swim == 0) {initMap(51.50694616, 7.46843398, 13, 'swim-map'); swim = 1;}
 	if(img_id = 'swim-pic' && swim == 1) swim = 0;
 	if(img_id = 'bike-pic' && bike == 0) {initMap(51.50694616, 7.46843398, 13, 'bike-map'); bike = 1;}
