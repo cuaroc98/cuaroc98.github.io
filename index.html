@@ -1,0 +1,169 @@
+﻿<script type="text/javascript" src="./js/jQuery.js"></script>
+<script type="text/javascript" src="./js/functions.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqwEAFfzyB3GLmnlumO__usgoURfK_qWQ&callback=initMaps"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lets Fetz</title>
+	<link rel="shortcut icon" type="image/png" href="./assets/images/icon.png">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/my/own.css">
+	<link rel="stylesheet" href="./css/my/mobile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+<body>
+    <div class="container">
+	<div class="text-center pt-6 pb-6">
+		<h1 style="padding-top: 50px;">Lets Fetz sprach der Frosch und sprang in den Mixer</h1>
+	</div>
+	<br><br>
+</div>
+
+<div class="container">
+	<div class="Paragraph" style="background: #fafafa">
+		<div class="row" style="">
+			<div id="swim-pic-cont" class="large-cont">
+				<img id="swim-pic" src="./assets/images/pic1(3).jpg" onClick="resize('swim-pic')" class="large">
+			</div>
+			<div id="swim-pic-story" class="small-story">
+				<div style="width : 750px">
+					<h1 class="mb-2">Schwimmen</h1>
+					<h2 class="mb-3">Wir können schwimmen.</h2>
+					<h4>'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'</h4>
+				</div>
+			</div>
+		</div>
+		<div id="swim-pic-details" class="details row" style="display:none">
+			<div id="swim-map" class="map"></div>
+			<div id="swim-times" class="large-story">
+				<h2 style="margin-bottom : 40px">Trainingszeiten</h2>
+				<div class="times">
+					<h4>Dienstag 7:00 - 9:00 Uhr Südbad (A)</h4>
+					<h4>Donnerstag 16:45 - 19:00 Uhr Südbad (A)</h4>
+					<h4>Samstag 8:00 - 10:00 Uhr Westbad (B)</h4>
+				</div>
+			</div>
+		</div>
+		<div id="swim-pic-border" class="small-border row"></div>
+		<br><br>
+	</div>
+</div>
+<div class="container">
+	<div class="Paragraph" style="background: #fafafa">
+		<div class="row">
+			<div id="bike-pic-cont" class="large-cont">
+				<img id="bike-pic" src="./assets/images/pic2(3).jpg" onClick="resize('bike-pic')" class="large">
+			</div>
+			<div id="bike-pic-story" class="small-story">
+				<div style="width : 750px">
+					<h1 class="mb-2">Fahrradfahren</h1>
+					<h2 class="mb-3">Wir können radeln.</h2>
+					<h4>'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'</h4>
+				</div>
+			</div>
+		</div>
+		<div id="bike-pic-details" class="details row" style="display:none">
+			<div id="bike-map" class="map col-sm-4"></div>
+			<div id="bike-times" class="large-story col-sm-8">
+				<h2 style="margin-bottom : 40px">Trainingszeiten</h2>
+				<div class="times">
+					<h4>Sonntag 10:00 Uhr Sölde (C)</h4>
+				</div>
+			</div>
+		</div>
+		<div id="bike-pic-border" class="small-border row"></div>
+		<br><br>
+	</div>
+</div>
+<div class="container">
+	<div class="Paragraph" style="background: #fafafa">
+		<div class="row">
+			<div id="run-pic-cont" class="large-cont">
+				<img id="run-pic" src="./assets/images/pic3(2).jpg" onClick="resize('run-pic')" class="large">
+			</div>
+			<div id="run-pic-story" class="small-story">
+				<div style="width : 750px">
+					<h1 class="mb-2">Laufen</h1>
+					<h2 class="mb-3">Wir können laufen.</h2>
+					<h4>'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'</h4>
+				</div>
+			</div>
+		</div>
+		<div id="run-pic-details" class="details row" style="display:none">
+			<div id="run-map" class="map"></div>
+			<div id="run-times" class="large-story">
+				<h2 style="margin-bottom : 40px">Trainingszeiten</h2>
+				<div class="times">
+					<h4>Montag 18:30 Uhr bei Basti (D)</h4>
+					<h4>Mittwoch 18:00 Uhr Helmut-Körnig-Halle (E)</h4>
+					<h4>Freitag 18:00 Uhr Helmut-Körnig-Halle (E)</h4>
+				</div>
+			</div>
+		</div>
+		<div id="run-pic-border" class="small-border row"></div>
+		<br><br>
+	</div>
+</div>
+<div class="container">
+	<div class="Paragraph4" style="background: #fafafa">
+		<a id="about-btn" href="#about" class="btn btn-outline-success my-2 my-sm-0" role="button" onClick="show('about');">Über Uns</a>
+		<a id="times-btn" href="#times" class="btn btn-outline-success my-2 my-sm-0" role="button" onClick="show('times');">Zeiten</a>
+		<br><br>
+		<a id="contact-btn" href="#contact" class="btn btn-outline-success my-2 my-sm-0" role="button" onClick="show('contact');">Kontakt</a>
+		<br><br>
+	</div>
+</div>
+<div id="about" class="container" style="display:none" active="false">
+	<div class="Paragraph5" style="background: #fafafa">
+		<div class="row" style="">
+			<div class="col-sm-12">
+				<div>
+					<h1 class="mb-2">Über Uns</h1>
+					<h2 class="mb-3">Test123.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="times" class="container" style="display:none" active="false">
+	<div class="Paragraph8" style="background: #fafafa">
+		<div class="row" style="">
+			<div class="col-sm-12">
+				<div>
+					<h1 class="mb-2">Trainigszeiten</h1>
+					<h2>Auf Anfrage<h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="contact" class="container" style="display:none" active="false">
+	<div class="Paragraph7" style="background: #fafafa">
+		<div class="row" style="">
+			<div class="col-sm-12">
+				<div>
+					<h1 class="mb-2">Kontakt</h1>
+					<a id="mail-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button">E-Mail</a>
+					<a id="facebook-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button" style="opacity: 0.5;">Facebook</a>
+					<a id="twitter-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button" style="opacity: 0.5;">Twitter</a>
+					<a id="jodel-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button" style="opacity: 0.5;">Jodel</a>
+					<a id="kik-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button" style="opacity: 0.5;">Kik</a>
+					<a id="whatsapp-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button" style="opacity: 0.5;">WhatsApp</a>
+					<a id="snapchat-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button" style="opacity: 0.5;">Snapchat</a>
+					<a id="instagram-button" href="mailto:paul@lets-fetz.info" class="btn btn-outline-success my-2 my-sm-0" role="button" style="opacity: 0.5;">Instagram</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="Paragraph7" style="background: #fafafa">
+		<br></br>
+		<br></br>
+		<br></br>
+	</div>
+</div>
+</body>
+</html>

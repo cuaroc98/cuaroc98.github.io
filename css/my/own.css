@@ -1,0 +1,103 @@
+@font-face { font-family: Test; src: url('fontawesome-webfont.ttf'); } 
+
+div.container{text-align:center!important;}
+
+html *
+{
+	font-family: Test !important;
+}
+
+.map 
+{
+	height: 339px;
+    width: 342px;
+}
+
+.small 
+{
+	position: relative;
+    left: 60%;
+    margin-left: -200%;
+	cursor : pointer;
+	transition : left 1s, margin-left 1s
+}
+
+.large
+{
+	position: relative;
+    left: 0%;
+    margin-left: 0%;
+	cursor : pointer;
+	transition : left 1s, margin-left 1s
+}
+
+.small-cont
+{
+	width: 30%;
+    text-align: center;
+    overflow: hidden;
+	height : 339px;
+	transition : width 1s
+}
+
+.large-cont
+{
+	width: 96%;
+    text-align: center;
+    overflow: hidden;
+	height : 339px;
+	transition : width 1s
+}
+
+.large-story
+{
+	
+	margin-left: -20px;
+	max-height: 338px;
+    overflow: hidden;
+	width : 70%;
+	
+	transition : width 1s;
+	transition-delay: 0.1s;
+}
+
+.small-story
+{
+	
+	margin-left: -20px;
+	max-height: 342px;
+    overflow: hidden;
+	width : 0%;
+	transition : width 0.7s;
+}
+
+.details
+{
+	padding-top: 50px;
+}
+
+.large-border
+{
+	padding-top: 50px;
+	margin-right : 0px;
+	border-bottom: 6px solid #888e99;
+	transition: border-bottom 1s;
+}
+
+.small-border
+{
+	padding-top: 50px;
+	border-bottom: 0px solid transparent;
+	transition: border-bottom 1s;
+}
+
+.times h4
+{
+	margin-bottom: 20px;
+}
+
+.paragraph
+{
+	margin-left: -20px;
+    padding-left: 15px;
+}
