@@ -1,7 +1,3 @@
-if (screen.width <= 800) {
-document.location = "mobile.html";
-}
-
 var ids = ["contact", "about", "times"];
 function showTest(id)
 {

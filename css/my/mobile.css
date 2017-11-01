@@ -1,10 +1,9 @@
-@media screen and (max-width: 481px){
-
-
 html *
 {
 }
 
-
+.pic
+{
+	max-width: 100%;
+	height: auto;
 }
-</code>
