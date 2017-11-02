@@ -7,3 +7,21 @@ html *
 	max-width: 100%;
 	height: auto;
 }
+
+.mobile-map
+{
+	width: 100%;
+	padding-top: 100%;
+}
+
+.large-border_mobile
+{
+	padding-top: 50px;
+	border-bottom: 6px solid #888e99;
+	transition: border-bottom 1s;
+}
+
+.times_mobile
+{
+	padding-top: 40px;
+}
