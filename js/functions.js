@@ -1,4 +1,13 @@
 var ids = ["contact", "about", "times"];
+
+function initInitMaps()
+{
+	jQuery(document).ready(function(){
+		
+		initMaps();
+	});
+}
+
 function showTest(id)
 {
 	jQuery('#' + id).slideToggle();
